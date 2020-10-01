@@ -29,7 +29,7 @@ public class VerifCategorieTables {
     WebElement ajoutPanier;
     String prixText;
     String nomText;
-	String URL = "http://localhost:8080/shopizer/shop/";
+	String URL = "http://176.135.69.207:16500/shopizer/shop";
 	
 	
 	@Before

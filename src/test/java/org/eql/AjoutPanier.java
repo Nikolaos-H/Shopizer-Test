@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 
 public class AjoutPanier {
 
-	String URL = "http://192.168.1.40:8080/shopizer/shop";
+	String URL = "http://176.135.69.207:16500/shopizer/shop";
 	WebDriver driver;
 	
 	

@@ -25,14 +25,14 @@ public class AjoutPanierTest {
 	public void InitialisationTest() {		
 			
 		//Choisir le driver parmis les 3 choix disponibles (Internet Explorer KO)
-//		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-		System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+//		System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
 //		System.setProperty("webdriver.ie.driver", "src/main/resources/IEDriverServer.exe");
 		
 		
 		// Instanciation du WebDriver. Choisir le driver parmis les 3 choix disponibles (Internet Explorer KO)
-//		driver = new ChromeDriver();
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
+//		driver = new FirefoxDriver();
 //		driver = new InternetExplorerDriver();	
 	}
 		

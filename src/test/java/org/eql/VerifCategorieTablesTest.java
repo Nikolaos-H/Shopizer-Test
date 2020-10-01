@@ -108,6 +108,7 @@ public class VerifCategorieTablesTest {
 		driver.findElement(By.xpath("//*[@id=\"mainContent\"]//li[3]/a")).click();
 		
 		//Vérifier le nombre d'élément est inférieur au nombre avant l'application du filtre
+		Thread.sleep(1000);
 		tables=driver.findElements(By.xpath("//*[@id=\"productsContainer\"]/div"));
 		Thread.sleep(1000);
 		assert(produits.size()>tables.size());

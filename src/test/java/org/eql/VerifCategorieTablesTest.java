@@ -105,12 +105,12 @@ public class VerifCategorieTablesTest {
 		
 		//PdT3
 		//Selectionner le filtre Asian Wood
-		driver.findElement(By.xpath("//*[@id=\"mainContent\"]//li[3]/a")).click();
+		driver.findElement(By.xpath("//*[@id='mainContent']//li[3]/a")).click();
 		
 		//Vérifier le nombre d'élément est inférieur au nombre avant l'application du filtre
 		Thread.sleep(1000);
-		tables=driver.findElements(By.xpath("//*[@id=\"productsContainer\"]/div"));
-//		assert(produits.size()>tables.size());
+		tables=driver.findElements(By.xpath("//*[@id='productsContainer']/div"));
+		assert(produits.size()>tables.size());
 	
 		//Vérifier que les tables affichées étaient bien dans la liste avant application du filtre
 		for (WebElement table:tables ) { 
@@ -135,7 +135,7 @@ public class VerifCategorieTablesTest {
 		//Présence des éléments
 		String nomItem = driver.findElement(By.xpath("//h3")).getText();
 		assertEquals(nomItem.toLowerCase(),nomText.toLowerCase());
-		String prixItem = driver.findElement(By.xpath("//*[@id=\"productPrice\"]/span")).getText();
+		String prixItem = driver.findElement(By.xpath("//*[@id='productPrice']/span")).getText();
 		assertEquals(prixItem,prixText);
 		WebElement etoileItem= driver.findElement(By.xpath("//*[@class='stars']"));
 		assertTrue(etoileItem.isDisplayed());

@@ -15,14 +15,14 @@ import org.openqa.selenium.interactions.Actions;
 
 import static org.junit.Assert.*;
 
-public class AjoutPanier {
+public class AjoutPanierTest {
 
 	String URL = "http://176.135.69.207:16500/shopizer/shop";
 	WebDriver driver;
 	
 	
 	@Before
-	public void initialisation() {		
+	public void InitialisationTest() {		
 			
 		//Choisir le driver parmis les 3 choix disponibles (Internet Explorer KO)
 //		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
@@ -38,7 +38,7 @@ public class AjoutPanier {
 		
 	
 	@Test
-	public void utilisationDuPanier() throws InterruptedException {
+	public void utilisationDuPanierTest() throws InterruptedException {
 
 		// instanciation de de WebDriver
 		Actions action = new Actions(driver);
@@ -121,7 +121,7 @@ public class AjoutPanier {
 	}
 	
 	@After
-	public void Final() {
+	public void FinalTest() {
 		
 		//Quitter le navigateur
 		driver.quit();

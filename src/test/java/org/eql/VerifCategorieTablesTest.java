@@ -18,7 +18,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.FindBy;
 
 
-public class VerifCategorieTables {
+public class VerifCategorieTablesTest {
 	
 	WebDriver driver;
 	List <WebElement> produits;
@@ -33,7 +33,7 @@ public class VerifCategorieTables {
 	
 	
 	@Before
-	public void Initialisation() {
+	public void InitialisationTest() {
 		
 		//Choisir le driver parmis les 3 choix disponibles (Internet Explorer KO)
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
@@ -48,7 +48,7 @@ public class VerifCategorieTables {
 	
 	
 	@Test		
-	public void CategorieTables () throws InterruptedException{
+	public void CategorieTablesTest () throws InterruptedException{
 	
 		//navigation
 		driver.get(URL);
@@ -145,7 +145,7 @@ public class VerifCategorieTables {
 	
 	@After
 	
-	public void Final() {
+	public void FinalTest() {
 		
 		//Quitter le navigateur
 		driver.quit();
